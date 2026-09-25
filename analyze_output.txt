@@ -1,0 +1,21 @@
+﻿Analyzing mshmsidn...                                           
+
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check. Guard a 'State.context' use with a 'mounted' check on the State, and other BuildContext use with a 'mounted' check on the BuildContext - lib\main.dart:2896:63 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check. Guard a 'State.context' use with a 'mounted' check on the State, and other BuildContext use with a 'mounted' check on the BuildContext - lib\main.dart:2908:65 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check. Guard a 'State.context' use with a 'mounted' check on the State, and other BuildContext use with a 'mounted' check on the BuildContext - lib\main.dart:2953:61 - use_build_context_synchronously
+   info - Angle brackets will be interpreted as HTML. Try using backticks around the content with angle brackets, or try replacing `<` with `&lt;` and `>` with `&gt;` - lib\main.dart:3007:68 - unintended_html_in_doc_comment
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check. Guard a 'State.context' use with a 'mounted' check on the State, and other BuildContext use with a 'mounted' check on the BuildContext - lib\main.dart:3314:50 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check. Guard a 'State.context' use with a 'mounted' check on the State, and other BuildContext use with a 'mounted' check on the BuildContext - lib\pages\settings_page.dart:871:52 - use_build_context_synchronously
+warning - The declaration '_baseCompat' isn't referenced. Try removing the declaration of '_baseCompat' - lib\services\app_theme_colors.dart:32:7 - unused_element
+warning - 'StreamAudioSource' is experimental and could be removed or changed at any time - lib\services\qibla_sound_service.dart:158:26 - experimental_member_use
+warning - 'StreamAudioResponse' is experimental and could be removed or changed at any time - lib\services\qibla_sound_service.dart:163:10 - experimental_member_use
+warning - 'StreamAudioResponse' is experimental and could be removed or changed at any time - lib\services\qibla_sound_service.dart:166:12 - experimental_member_use
+
+flutter : 10 issues found. (ran in 3.9s)
+At line:1 char:1
++ flutter analyze 2>&1 | Out-File -FilePath "d:\mshmsidn\analyze_output ...
++ ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (10 issues found. (ran in 3.9s):St 
+   ring) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

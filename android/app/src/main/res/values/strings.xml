@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="appwidget_description">أداة أوقات الصلاة - الفجر</string>
+    <string name="widget_full_label">الفجر — الصلاة القادمة</string>
+    <string name="widget_mini_label">الفجر — مصغّر</string>
+    <string name="widget_all_label">الفجر — كل المواقيت</string>
+    <string name="widget_adhkar_label">الفجر — الأذكار</string>
+</resources>

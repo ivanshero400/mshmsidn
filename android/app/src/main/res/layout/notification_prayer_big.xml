@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Expanded lock-screen notification: live clock + date + prayers + countdown -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <!-- Live clock + date (TextClock ticks by itself, zero battery cost) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:format24Hour="HH:mm"
+            android:format12Hour="h:mm"
+            android:textColor="@color/notifAccent"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light" />
+
+        <TextClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:format24Hour="EEEE، d MMMM"
+            android:format12Hour="EEEE، d MMMM"
+            android:textColor="@color/notifSecondary"
+            android:textSize="13sp"
+            android:layout_marginStart="12dp" />
+    </LinearLayout>
+
+    <!-- Current + next prayer row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الصلاة الحالية"
+            android:textColor="@color/notifSecondary"
+            android:textSize="12sp"
+            android:layout_marginEnd="6dp" />
+
+        <TextView
+            android:id="@+id/np_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textColor="@color/notifAccent"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الصلاة القادمة"
+            android:textColor="@color/notifSecondary"
+            android:textSize="12sp"
+            android:layout_marginEnd="6dp" />
+
+        <TextView
+            android:id="@+id/np_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textColor="@color/notifPrimary"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="بعد"
+            android:textColor="@color/notifSecondary"
+            android:textSize="12sp"
+            android:layout_marginEnd="4dp" />
+
+        <Chronometer
+            android:id="@+id/np_countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/notifAccent"
+            android:textSize="15sp"
+            android:fontFamily="monospace" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Notification text colors — dark system theme (light text) -->
+    <color name="notifPrimary">#F0EDE4</color>
+    <color name="notifSecondary">#9A9588</color>
+    <color name="notifAccent">#D4A853</color>
+</resources>

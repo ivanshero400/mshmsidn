@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Collapsed lock-screen notification: current prayer · next prayer · live countdown -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layoutDirection="rtl"
+    android:gravity="center_vertical"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="الآن"
+        android:textColor="@color/notifSecondary"
+        android:textSize="12sp"
+        android:layout_marginEnd="4dp" />
+
+    <TextView
+        android:id="@+id/np_current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textColor="@color/notifAccent"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="القادمة"
+        android:textColor="@color/notifSecondary"
+        android:textSize="12sp"
+        android:layout_marginEnd="4dp" />
+
+    <TextView
+        android:id="@+id/np_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textColor="@color/notifSecondary"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="10dp" />
+
+    <Chronometer
+        android:id="@+id/np_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/notifAccent"
+        android:textSize="14sp"
+        android:fontFamily="monospace" />
+
+</LinearLayout>
